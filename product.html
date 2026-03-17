@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | WOOZY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">WOOZY</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search bags...">
+                <i class='bx bx-search'></i>
+            </div>
+            <a href="login.html" class="user-icon"><i class='bx bx-user'></i></a>
+            <a href="cart.html" class="cart-icon-wrapper">
+                <i class='bx bx-cart'></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="product-detail-section" id="productDetailSection">
+        <div class="product-details-container">
+            <div class="product-image-large">
+                <img id="productImg" src="" alt="">
+            </div>
+            <div class="product-info">
+                <span class="category" id="productCategory"></span>
+                <h1 id="productName">Loading Product...</h1>
+                <span class="price" id="productPrice"></span>
+                
+                <p class="product-description" id="productDescription"></p>
+                
+                <ul class="specifications" id="productSpecs">
+                    <!-- Specs injected here -->
+                </ul>
+                
+                <div class="actions">
+                    <button id="addToCartBtn" class="btn primary-btn">
+                        <i class='bx bx-cart-add'></i> Add to Cart
+                    </button>
+                    <a href="index.html" class="btn secondary-btn">Back to Shop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 WOOZY Online Bag Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

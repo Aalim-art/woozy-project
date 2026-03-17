@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOOZY | Premium Bag Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">WOOZY</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search bags...">
+                <i class='bx bx-search'></i>
+            </div>
+            <a href="login.html" class="user-icon"><i class='bx bx-user'></i></a>
+            <a href="cart.html" class="cart-icon-wrapper" id="cartIcon">
+                <i class='bx bx-cart'></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Carry Your World with <span class="highlight">WOOZY</span>.</h1>
+            <p>Elevate your everyday carry. Discover our premium collection of school, office, and college bags designed for durability, comfort, and uncompromising style.</p>
+            <a href="#collections" class="btn primary-btn">
+                <span>Shop Subcollections</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="collections" class="collections">
+        <div class="section-title">
+            <h2>Our Curated Collections</h2>
+            <p>Exquisitely crafted to meet all your carrying needs.</p>
+        </div>
+        <div class="product-grid" id="productGrid">
+            <!-- Dynamically populated via JS -->
+            <div class="loading">Loading premium bags...</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 WOOZY Online Bag Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
